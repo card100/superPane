@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /* Henry Gruett
  * 2/1/2019
- * v1.0
+ * v1.1.1
  * Lets you make a pane quickly-er
  */
 public class superPane {
@@ -24,20 +24,18 @@ public class superPane {
 		int output = 0;
 		String old = "";
 		while (!valid){
-			
-				try{
-					old = JOptionPane.showInputDialog(null, message);
-					output = Integer.parseInt(old);
-					valid = true;
-					return output;
-				} catch (Exception e) {
-					if (loop == 0){
-						return 0;
-					} else if (loop == 1){
-						JOptionPane.showMessageDialog(null, errorMessage);
-						
-					}
+			try{
+				old = JOptionPane.showInputDialog(null, message);
+				output = Integer.parseInt(old);
+				valid = true;
+				return output;
+			} catch (Exception e) {
+				if (loop == 0){
+					return 0;
+				} else if (loop == 1){
+					JOptionPane.showMessageDialog(null, errorMessage);	
 				}
+			}
 		}
 		return 0;
 	}
@@ -51,13 +49,13 @@ public class superPane {
 	public static String getString(String message) {
 		String output = "0";
 		String old = "";
-			try{
-				old = JOptionPane.showInputDialog(null, message);
-				output = old;
-				return output;
-			} catch (Exception e) {
-				return "error: "+e;
-			}
+		try{
+			old = JOptionPane.showInputDialog(null, message);
+			output = old;
+			return output;
+		} catch (Exception e) {
+			return "error: "+e;
+		}
 	}
 	
 	/* getDouble(1, "Enter number", "Number not entered");
@@ -71,19 +69,18 @@ public class superPane {
 		double output = 0;
 		String old = "";
 		while (!valid){
-				try{
-					old = JOptionPane.showInputDialog(null, message);
-					output =   Double.parseDouble(old);
-					valid = true;
-					return output;
-				} catch (Exception e) {
-					if (loop == 0){
-						return 0;
-					} else if (loop == 1){
-						JOptionPane.showMessageDialog(null, errorMessage);
-						
-					}
+			try{
+				old = JOptionPane.showInputDialog(null, message);
+				output =   Double.parseDouble(old);
+				valid = true;
+				return output;
+			} catch (Exception e) {
+				if (loop == 0){
+					return 0;
+				} else if (loop == 1){
+					JOptionPane.showMessageDialog(null, errorMessage);	
 				}
+			}
 		}
 		return 0;
 	}

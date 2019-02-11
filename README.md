@@ -18,6 +18,20 @@ The 1 tells getInt to loop if the user enters something that is not an int. Ente
 
 If the loop is off and it receives an error it will return 0.
 
+<b>To get an double:</b>
+``` java
+double myVar = superPane.getDouble(1, "Enter in a number", "Number not entered, try again");
+``` 
+```
+Parameters: loop?   main message      error message
+            (0/1)    String             string
+Return: double
+```
+   
+The 1 tells getInt to loop if the user enters something that is not an double. Enter in a 0 to just except the error.
+
+If the loop is off and it receives an error it will return 0.
+
 <b>To get a String:</b>
 ``` java
 String myVar = superPane.getString("Enter in a String");

@@ -6,7 +6,7 @@ Download from releases or compile source code.
 
 <b>To get an int:</b>
 ``` java
-superPane.getInt(1);
+superPane.getInt(1, "Enter in a number", "Number not entered, try again");
 ``` 
 The 1 tells getInt to loop if the user enters something that is not an int. Enter in a 0 to just except the error.
 

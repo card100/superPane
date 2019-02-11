@@ -2,7 +2,7 @@
 Lets you make a JOptionpane quickly-er
 
 ## To Use
-Download from releases or compile source code.
+Download from <a href="https://github.com/card100/superPane/releases">releases</a> or compile the <a href="https://raw.githubusercontent.com/card100/superPane/master/superPane.java">current and unreliable source code</a>.
 
 <b>To get an int:</b>
 ``` java

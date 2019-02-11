@@ -1,3 +1,4 @@
+<i>This is the readme for the current version. See <a href="https://github.com/card100/superPane/blob/v1.0/README.md">v1.0</a> version</i>
 # superPane
 Lets you make a JOptionpane quickly-er
 
